@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Artifika&family=Catamaran:wght@100..900&family=IM+Fell+Double+Pica:ital@0;1&family=Jacques+Francois&family=Sulphur+Point:wght@300;400;700&display=swap');
 html, body {
-    margin: 0; /* Reset default margin */
-    padding: 0; /* Reset default padding */
-    height: 100vh; /* Ensure body fills entire viewport */
+    margin: 0; 
+    padding: 0; 
+    height: 100vh; 
 }
 
 body {
@@ -239,10 +239,13 @@ margin-bottom: 20px;
         width: 100%;
     }
     .written h1{
-       font-size:55px;
+        display: inline-block;
+        font-size:70px;
     }
     
     #btn {
+        position: relative;
+        left: 70px;
         transition: none;
         margin-top: 20px;
         width: 170px;
@@ -267,10 +270,10 @@ margin-bottom: 20px;
 .right-half{
     justify-content: center;
     max-width: 100%;    
-    flex: 1; 
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    position: relative;
+    gap: 20px;
 }
 
 #left-top,
@@ -298,34 +301,30 @@ margin-bottom: 20px;
     flex-direction: column;
 }
  
-    #list {
-        display: block;
-    }
 
     #menu {
-        display: block;
-        padding: 5px; 
+        display: flexbox;
+        padding: 2px; 
     }
 
     #menu img {
-        height: 30px;
-        width: auto;
+        height: auto;
+        width: 10px;
         cursor: pointer;
-        display: block; 
+        display: flexbox; 
+        flex-direction: row;
     }
-
     #list a {
-        display: none;
+        font-size: medium;
+        display: flexbox;
+        flex-direction: row;
         padding: 10px;
         margin: 5px 0;
         text-align: center;
     }
-
-    #list a:hover {
-        padding: 10px;
-        border-radius: 0;
-        color: white;
-        background-color: rgb(99, 99, 224);
+    .list:hover{
+        transform: none !important;
+        transition: none !important;
     }
     .card {
         margin-left: 2px; 
