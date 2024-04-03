@@ -385,26 +385,37 @@ margin-bottom: 20px;
     }
 
     .written p{
-        left:-10px;
+        left:-30px;
         position:relative;
         align-items: center;
         justify-content: center;
         width: 250px;
     }
     .written h1{
-        left: -60px;
+        left: -90px;
         position: relative;
         justify-content: center;
         text-align: center;
         white-space: nowrap;
         font-size:50px;
     }
+  
     #btn {
         left:0px;
         position: relative;
         justify-self: center;
+        transition: none;
+        margin-top: 20px;
+        width: 170px;
+        text-align: center;
+        color: snow;
+        padding: 10px 20px;
+        border: 1px solid #000;
         cursor: pointer;
+        font-family: "Sulphur Point", sans-serif;
+        background-color: rgb(206, 156, 95);
     }
+    
 
     
 #btn:hover{
@@ -413,6 +424,12 @@ margin-bottom: 20px;
     border: 1px solid gold;
     transform: translateX(-5px); 
 
+}
+
+.card h1,
+#para{
+    display: flex;
+    flex-direction: row;
 }
 }
 
