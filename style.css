@@ -385,24 +385,35 @@ margin-bottom: 20px;
     }
 
     .written p{
-        left: none;
+        left:-10px;
         position:relative;
         align-items: center;
         justify-content: center;
-        width: 300px;
+        width: 250px;
     }
     .written h1{
+        left: -60px;
+        position: relative;
         justify-content: center;
         text-align: center;
+        white-space: nowrap;
         font-size:50px;
     }
-
-    
     #btn {
         left:0px;
         position: relative;
         justify-self: center;
+        cursor: pointer;
     }
+
+    
+#btn:hover{
+    color: black;
+    background-color: rgb(250, 249, 248);
+    border: 1px solid gold;
+    transform: translateX(-5px); 
+
+}
 }
 
 
