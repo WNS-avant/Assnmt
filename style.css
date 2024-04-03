@@ -357,9 +357,67 @@ margin-bottom: 20px;
 }
 
 
-@media screen and (max-width:320px)
- {
+@media screen and (max-width:560px)
+ {  
+    #menu {
+        display: block;
+        padding: 2px; 
+    }
+
+    #menu img {
+        height: auto;
+        width: 10px;
+        cursor: pointer;
+       
+    }
+    #list a {
+        display: none;
+    }
+    .list:hover{
+        transform: none !important;
+        transition: none !important;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        padding: 20px;
+    }
     
+    .written {
+        text-align: center; 
+        max-height: auto;
+        width: auto;
+    }
+
+    .written p{
+        align-items: center;
+        width: 100%;
+    }
+    .written h1{
+        position: relative;
+        left: -70px;
+        white-space: nowrap;
+        font-size:50px;
+    }
+    
+    #btn {
+        position: relative;
+        left: 10px;
+        transition: none;
+        margin-top: 20px;
+        width: 170px;
+        text-align: center;
+        color: snow;
+        padding: 10px 20px;
+        border: 1px solid #000;
+        cursor: pointer;
+        font-family: "Sulphur Point", sans-serif;
+        background-color: rgb(206, 156, 95);
+    }
 }
 
 
