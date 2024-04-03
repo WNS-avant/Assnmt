@@ -385,14 +385,14 @@ margin-bottom: 20px;
     }
 
     .written p{
-        left:-30px;
+        left:-50px;
         position:relative;
         align-items: center;
         justify-content: center;
         width: 250px;
     }
     .written h1{
-        left: -90px;
+        left: -110px;
         position: relative;
         justify-content: center;
         text-align: center;
@@ -401,7 +401,7 @@ margin-bottom: 20px;
     }
   
     #btn {
-        left:0px;
+        left:-10px;
         position: relative;
         justify-self: center;
         transition: none;
