@@ -385,14 +385,14 @@ margin-bottom: 20px;
     }
 
     .written p{
-        left:-40px;
+        left:-45px;
         position:relative;
         align-items: center;
         justify-content: center;
         width: 250px;
     }
     .written h1{
-        left: -100px;
+        left: -105px;
         position: relative;
         justify-content: center;
         text-align: center;
@@ -425,7 +425,9 @@ margin-bottom: 20px;
     transform: translateX(-5px); 
 
 }
-
+.card h5{
+    display: none;
+}
 .card h1,
 #para{
     display: flex;
