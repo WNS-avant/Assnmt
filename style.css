@@ -427,12 +427,13 @@ margin-bottom: 20px;
 }
 .card{
     justify-content: center;
-    padding:5px;
+    padding:10px;
 }
-.card h5{
-    padding-bottom: 0%;
+
+
+.card h1{
     text-align: center;
-    display: none;
+    font-size: 30px;
 }
 
 .card h1,
