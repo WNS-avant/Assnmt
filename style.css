@@ -358,7 +358,16 @@ margin-bottom: 20px;
 
 
 @media screen and (max-width:560px)
- {  
+ { 
+    
+.page1:hover,
+.page2:hover {
+    transform: none; 
+    transition: none; 
+}
+    .page1{
+        margin-bottom: -50px;
+    } 
     #menu {
         display: block;
         padding: 2px; 
@@ -416,6 +425,17 @@ margin-bottom: 20px;
         background-color: rgb(206, 156, 95);
     }
     
+    #img-right{
+        left:38px;
+        top: 200px;
+        display: block;
+        width: 80%;
+        height: 500px;
+        z-index: 1;
+        position: absolute;
+        overflow: hidden;
+        opacity: 10%;
+    }
 
     
 #btn:hover{
