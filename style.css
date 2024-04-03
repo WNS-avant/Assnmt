@@ -154,7 +154,6 @@ margin-bottom: 20px;
 
 .left-half,
 .right-half{
-    outline: 2px double solid gold;
 
     max-width: 50%;
     max-height: 50%;
@@ -167,11 +166,13 @@ margin-bottom: 20px;
 #left-top,
 #left-down
  {
+    border: 2px double solid gold;
     max-width: 230px;
     max-height: 205px; 
     object-fit: cover;
 }
 #right-full{
+    border: 2px double solid gold;
     margin-left: -5px;
     max-height: 610px; 
     object-fit: cover;
@@ -216,7 +217,15 @@ margin-bottom: 20px;
 
 @media screen and (min-width:321px) and (max-width:768px) {
     #img-right{
-        display: none;
+        left:2px;
+        top: 360px;
+        display: block;
+        width: 100%;
+        height: 500px;
+        z-index: 1;
+        position: absolute;
+        overflow: hidden;
+        opacity: 5%;
     }
 
     .intro {
@@ -279,12 +288,16 @@ margin-bottom: 20px;
 #left-top,
 #left-down
  {
+    margin: 2px;
+    border: 2px solid white;
+    width: 50%;
     gap: 20px;
-    max-width: 100%;
     max-height: auto; 
     object-fit: cover;
 }
 #right-full{
+    margin: 5px;
+border: 2px solid white;
 width: 100%; 
 height: auto; 
 margin-bottom: 20px;
@@ -295,6 +308,7 @@ margin-bottom: 20px;
 #right-full {
     max-height: 300px;
     max-width: 100%; 
+    gap: 20px;
 }
 
 .content {
@@ -329,6 +343,10 @@ margin-bottom: 20px;
     .card {
         margin-left: 2px; 
         width: auto; 
+    }
+    .page1{
+        margin: none;
+        padding-bottom: 10px;
     }
     .page2 {
         padding: 30px 20px; 
