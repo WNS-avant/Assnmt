@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Artifika&family=Catamaran:wght@100..900&family=IM+Fell+Double+Pica:ital@0;1&family=Jacques+Francois&family=Sulphur+Point:wght@300;400;700&display=swap');
+html, body {
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
+    height: 100vh; /* Ensure body fills entire viewport */
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+.page1,
+.page2{
+background-image: linear-gradient(to bottom, rgb(241, 241, 185), rgb(144, 215, 239));
+margin-left:2px;
+margin-right:2px;
+margin-bottom:5px;
+margin-top: 2px;
+border-radius: 2px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.page2{
+    padding: 30px 150px;
+}
+
+.page1:hover,
+.page2:hover {
+    transform: translateY(-5px); 
+    transition: transform 0.3s ease; 
+}
+
+.intro h1{
+    font-size: 70px;
+}
+
+h1{
+    font-family: "Catamaran", sans-serif;
+    font-weight: 800;
+}
+
+h4,h5{
+    font-family: "Artifika", serif;
+    font-weight: 400;
+}
+
+.card h1{
+    font-size: 42px;
+    margin: none;
+}
+
+.navbar {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    background-color: rgb(206, 156, 95);
+}
+
+#list {
+    display: flex;
+    align-items: center; 
+}
+
+#list a {
+    padding: 20px;
+    font-family: "IM Fell Double Pica", serif;
+    font-weight: 700;
+    letter-spacing: 5px;
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+    margin-right: 50px; 
+}
+
+#list a:hover {
+    margin-right: 50px; 
+    padding: 15px;
+    border-radius: 10px;
+    color: white; 
+    background-color: rgb(99, 99, 224); 
+}
+
+#menu {
+    margin-left: auto; 
+}
+
+
+.intro{
+display: flex;
+flex-direction: row;
+margin-bottom: 20px;
+}
+
+.intro h1 {
+    margin-bottom: 10px;
+}
+
+.intro .written,
+.intro .image {
+    flex: 1;
+    width: 50%;
+}
+
+.written{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.written p{
+    font-family: "Jacques Francois", serif;
+}
+
+#btn{
+    margin-top: 20px;
+    width: 170px;
+    text-align: center;
+    color: snow;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    cursor: pointer;
+    font-family: "Sulphur Point", sans-serif;
+    background-color: rgb(206, 156, 95);
+}
+
+#btn:hover{
+    color: black;
+    background-color: rgb(250, 249, 248);
+    border: 1px solid gold;
+    transform: translateX(-5px); 
+    transition: transform 0.8s ease; 
+
+}
+#img-right {
+    flex: 1;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+#img-right:hover {
+    transform: scale(1); 
+}
+
+.box {
+    max-width: 50%;
+    max-height: 50%;
+    display: flex;
+    gap: 10px; 
+}
+
+.left-half,
+.right-half{
+    outline: 2px double solid gold;
+
+    max-width: 50%;
+    max-height: 50%;
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#left-top,
+#left-down
+ {
+    max-width: 230px;
+    max-height: 205px; 
+    object-fit: cover;
+}
+#right-full{
+    margin-left: -5px;
+    max-height: 610px; 
+    object-fit: cover;
+}
+
+.content{
+    display: flex;
+}
+
+.card {
+    overflow:hidden;
+
+    margin-top: 6%;
+    margin-left: 50px;
+    max-height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 400px; 
+    background-color: rgb(206, 156, 95);;
+}
+
+.card:hover{
+    transition: transform 1s ease; 
+    transform: translateX(5px); 
+
+}
+
+#para {
+    font-family: "Jacques Francois", serif;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#arrow {
+    margin-left: 5px;
+    height: 20px; 
+}
+
+@media screen and (min-width:321px) and (max-width:768px) {
+    #img-right{
+        display: none;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        padding: 20px;
+    }
+    
+    .written {
+        text-align: center; 
+        max-height: auto;
+        width: auto;
+    }
+
+    .written p{
+        align-items: center;
+        width: 100%;
+    }
+    .written h1{
+       font-size:55px;
+    }
+    
+    #btn {
+        transition: none;
+        margin-top: 20px;
+        width: 170px;
+        text-align: center;
+        color: snow;
+        padding: 10px 20px;
+        border: 1px solid #000;
+        cursor: pointer;
+        font-family: "Sulphur Point", sans-serif;
+        background-color: rgb(206, 156, 95);
+    }
+    
+.box {
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.left-half,
+.right-half{
+    justify-content: center;
+    max-width: 100%;    
+    flex: 1; 
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#left-top,
+#left-down
+ {
+    gap: 20px;
+    max-width: 100%;
+    max-height: auto; 
+    object-fit: cover;
+}
+#right-full{
+width: 100%; 
+height: auto; 
+margin-bottom: 20px;
+}
+
+#left-top,
+#left-down,
+#right-full {
+    max-height: 300px;
+    max-width: 100%; 
+}
+
+.content {
+    flex-direction: column;
+}
+ 
+    #list {
+        display: block;
+    }
+
+    #menu {
+        display: block;
+        padding: 5px; 
+    }
+
+    #menu img {
+        height: 30px;
+        width: auto;
+        cursor: pointer;
+        display: block; 
+    }
+
+    #list a {
+        display: none;
+        padding: 10px;
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    #list a:hover {
+        padding: 10px;
+        border-radius: 0;
+        color: white;
+        background-color: rgb(99, 99, 224);
+    }
+    .card {
+        margin-left: 2px; 
+        width: auto; 
+    }
+    .page2 {
+        padding: 30px 20px; 
+    }
+    #para {
+        width: auto; 
+    }
+}
+
+
+@media screen and (max-width:320px)
+ {
+    
+}
+
+
